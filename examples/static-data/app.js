@@ -4,7 +4,7 @@ import { getStates, matchStateToTerm, sortStates, styles } from '../../lib/utils
 import Autocomplete from '../../lib/index'
 
 class App extends React.Component {
-  state = { value: 'Ma' }
+  state = { value: '', selection: {name: 'No selection'} }
   render() {
     return (
       <div>
@@ -13,16 +13,15 @@ class App extends React.Component {
           When using static data, you use the client to sort and filter the items,
           so <code>Autocomplete</code> has methods baked in to help.
         </p>
+        <span>Selection: {this.state.selection.name}</span>
         <label htmlFor="states-autocomplete">Choose a state from the US</label>
         <Autocomplete
-          value={this.state.value}
           inputProps={{ id: 'states-autocomplete' }}
           items={getStates()}
-          getItemValue={(item) => item.name}
+          getItemValue={(item) => item.abbr}
           shouldItemRender={matchStateToTerm}
           sortItems={sortStates}
-          onChange={(event, value) => this.setState({ value })}
-          onSelect={value => this.setState({ value })}
+          onSelect={selection => this.setState({ selection })}
           renderItem={(item, isHighlighted) => (
             <div
               style={isHighlighted ? styles.highlightedItem : styles.item}
