@@ -22,7 +22,10 @@ class App extends React.Component {
           shouldItemRender={matchStateToTerm}
           sortItems={sortStates}
           onSelect={selection => this.setState({ selection })}
-          renderItem={(item) => (
+          renderButton={selection => (
+            <div>Button</div>
+          )}
+          renderItem={item => (
             <div key={item.abbr}>{item.name}</div>
           )}
         />
