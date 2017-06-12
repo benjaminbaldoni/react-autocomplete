@@ -22,11 +22,8 @@ class App extends React.Component {
           shouldItemRender={matchStateToTerm}
           sortItems={sortStates}
           onSelect={selection => this.setState({ selection })}
-          renderItem={(item, isHighlighted) => (
-            <div
-              style={isHighlighted ? styles.highlightedItem : styles.item}
-              key={item.abbr}
-            >{item.name}</div>
+          renderItem={(item) => (
+            <div key={item.abbr}>{item.name}</div>
           )}
         />
       </div>
