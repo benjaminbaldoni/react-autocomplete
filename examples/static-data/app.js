@@ -4,7 +4,12 @@ import { getStates, matchStateToTerm, sortStates, styles } from '../../lib/utils
 import Autocomplete from '../../lib/index'
 
 class App extends React.Component {
-  state = { value: '', selection: {name: 'No selection'} }
+  constructor(props) {
+    super(props);
+    
+    this.state = { value: '', selection: {name: 'No selection'} }
+  }
+
   render() {
     return (
       <div>
@@ -22,9 +27,7 @@ class App extends React.Component {
           shouldItemRender={matchStateToTerm}
           sortItems={sortStates}
           onSelect={selection => this.setState({ selection })}
-          renderButton={selection => (
-            <div>Button</div>
-          )}
+          buttonComponent={<div>Button {this.state.selection.name}</div>}
           renderItem={item => (
             <div key={item.abbr}>{item.name}</div>
           )}
