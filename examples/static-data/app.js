@@ -7,31 +7,64 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     
-    this.state = { value: '', selection: {name: 'No selection'} }
+    this.state = { 
+      value: '', 
+      singleSelection: {name: 'No Selection'},
+      multiSelection: [{name: 'No Selection'}], 
+    }
   }
 
   render() {
     return (
-      <div>
-        <h1>Basic Example with Static Data</h1>
-        <p>
-          When using static data, you use the client to sort and filter the items,
-          so <code>Autocomplete</code> has methods baked in to help.
-        </p>
-        <span>Selection: {this.state.selection.name}</span>
-        <label htmlFor="states-autocomplete">Choose a state from the US</label>
-        <Autocomplete
-          inputProps={{ id: 'states-autocomplete' }}
-          items={getStates()}
-          getItemValue={(item) => item.abbr}
-          shouldItemRender={matchStateToTerm}
-          sortItems={sortStates}
-          onSelect={selection => this.setState({ selection })}
-          buttonComponent={<div>Button {this.state.selection.name}</div>}
-          renderItem={item => (
-            <div key={item.abbr}>{item.name}</div>
-          )}
-        />
+      <div style={{display:'flex'}}>
+        <div style={{width:'50%'}}>
+          <h1>Single Select</h1>
+
+          <div>
+            Selection: {this.state.singleSelection.name}
+          </div>
+
+          <br/>
+
+          <Autocomplete
+            inputProps={{ id: 'states-autocomplete' }}
+            items={getStates()}
+            itemsKey='abbr'
+            getItemValue={(item) => item.abbr}
+            shouldItemRender={matchStateToTerm}
+            sortItems={sortStates}
+            onSelect={item => this.setState({ singleSelection: item })}
+            buttonComponent={<div>Button</div>}
+            renderItem={item => (
+              <div key={item.abbr}>{item.name}</div>
+            )}            
+          />
+        </div>
+
+        <div style={{width:'50%'}}>
+          <h1>Multi Select</h1>
+
+          <div>
+            Selection: {this.state.multiSelection.map(item => item.name)}
+          </div>
+
+          <br/>
+
+          <Autocomplete
+            inputProps={{ id: 'states-autocomplete' }}
+            items={getStates()}
+            itemsKey='abbr'
+            getItemValue={(item) => item.abbr}
+            shouldItemRender={matchStateToTerm}
+            sortItems={sortStates}
+            onSelect={(item, selection) => this.setState({ multiSelection: selection })}
+            buttonComponent={<div>Button</div>}
+            renderItem={item => (
+              <div key={item.abbr}>{item.name}</div>
+            )}
+            multiple
+          />
+        </div>
       </div>
     )
   }
