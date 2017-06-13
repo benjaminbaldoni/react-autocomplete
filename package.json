@@ -1,6 +1,6 @@
 {
-  "name": "react-autocomplete",
-  "version": "1.5.6",
+  "name": "reactjs-dropdown",
+  "version": "0.1.0",
   "description": "Accessible, extensible, Autocomplete for React.js",
   "main": "./build/lib/Autocomplete.js",
   "files": [
@@ -10,10 +10,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/reactjs/react-autocomplete.git"
+    "url": "https://github.com/benjaminbaldoni/react-autocomplete.git"
   },
-  "homepage": "https://github.com/reactjs/react-autocomplete",
-  "bugs": "https://github.com/reactjs/react-autocomplete/issues",
+  "homepage": "https://github.com/benjaminbaldoni/react-autocomplete",
+  "bugs": "https://github.com/benjaminbaldoni/react-autocomplete/issues",
   "directories": {
     "example": "examples"
   },
@@ -66,9 +66,8 @@
   },
   "tags": [
     "react",
-    "autocomplete",
-    "combobox",
-    "a11y"
+    "dropdown",
+    "multiple"
   ],
   "keywords": [],
   "dependencies": {
