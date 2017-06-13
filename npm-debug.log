@@ -1,0 +1,161 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--access=public' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/usr/local/var/www/react-autocomplete',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/benjamin/.npm/@benjaminbaldoni/react-dropdown/0.1.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/benjamin/.npm correctMkdir not in flight; initializing
+10 info lifecycle @benjaminbaldoni/react-dropdown@0.1.0~prepublish: @benjaminbaldoni/react-dropdown@0.1.0
+11 silly lifecycle @benjaminbaldoni/react-dropdown@0.1.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/benjamin/.npm/@benjaminbaldoni/react-dropdown/0.1.0/package.tgz',
+12 verbose tar pack   '/usr/local/var/www/react-autocomplete' ]
+13 verbose tarball /Users/benjamin/.npm/@benjaminbaldoni/react-dropdown/0.1.0/package.tgz
+14 verbose folder /usr/local/var/www/react-autocomplete
+15 verbose addLocalTarball adding from inside cache /Users/benjamin/.npm/@benjaminbaldoni/react-dropdown/0.1.0/package.tgz
+16 verbose correctMkdir /Users/benjamin/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @benjaminbaldoni/react-dropdown@0.1.0
+18 verbose afterAdd /Users/benjamin/.npm/@benjaminbaldoni/react-dropdown/0.1.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/benjamin/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/benjamin/.npm/@benjaminbaldoni/react-dropdown/0.1.0/package/package.json written
+21 silly publish { name: '@benjaminbaldoni/react-dropdown',
+21 silly publish   version: '0.1.0',
+21 silly publish   description: 'Accessible, extensible, Autocomplete for React.js',
+21 silly publish   main: './build/lib/Autocomplete.js',
+21 silly publish   files: [ 'build/lib/index.js', 'build/lib/Autocomplete.js', 'dist' ],
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/benjaminbaldoni/react-autocomplete.git' },
+21 silly publish   homepage: 'https://github.com/benjaminbaldoni/react-autocomplete',
+21 silly publish   bugs: { url: 'https://github.com/benjaminbaldoni/react-autocomplete/issues' },
+21 silly publish   directories: { example: 'examples' },
+21 silly publish   scripts:
+21 silly publish    { 'generate-readme': 'scripty',
+21 silly publish      'gh-pages': 'scripty',
+21 silly publish      release: 'scripty',
+21 silly publish      build: 'scripty',
+21 silly publish      'build:component': 'scripty',
+21 silly publish      'build:examples': 'scripty',
+21 silly publish      test: 'scripty',
+21 silly publish      'test:lint': 'scripty',
+21 silly publish      'test:jest': 'scripty',
+21 silly publish      coverage: 'scripty',
+21 silly publish      start: 'SCRIPTY_PARALLEL=true scripty' },
+21 silly publish   authors: [ 'Ryan Florence <rpflorence@gmail.com>' ],
+21 silly publish   license: 'MIT',
+21 silly publish   devDependencies:
+21 silly publish    { 'babel-cli': '^6.5.1',
+21 silly publish      'babel-eslint': '6.1.2',
+21 silly publish      'babel-jest': '^20.0.3',
+21 silly publish      'babel-preset-es2015': '^6.5.0',
+21 silly publish      'babel-preset-react': '^6.5.0',
+21 silly publish      'babel-preset-react-hmre': '^1.1.1',
+21 silly publish      'babel-preset-stage-0': '^6.5.0',
+21 silly publish      babelify: '^7.3.0',
+21 silly publish      browserify: '^13.3.0',
+21 silly publish      'browserify-hmr': '^0.3.5',
+21 silly publish      enzyme: '^2.8.2',
+21 silly publish      eslint: '^2.13.1',
+21 silly publish      'eslint-config-rackt': '^1.1.1',
+21 silly publish      'eslint-plugin-react': '^6.10.3',
+21 silly publish      exorcist: '^0.4.0',
+21 silly publish      jest: '^20.0.4',
+21 silly publish      'lodash.flow': '^3.5.0',
+21 silly publish      'lodash.map': '^4.6.0',
+21 silly publish      'lodash.sortby': '^4.7.0',
+21 silly publish      react: '^15.5.4',
+21 silly publish      'react-docgen': '^2.15.0',
+21 silly publish      'react-dom': '^15.5.4',
+21 silly publish      'react-test-renderer': '^15.5.4',
+21 silly publish      scripty: '^1.7.1',
+21 silly publish      st: '^1.2.0',
+21 silly publish      'uglify-js': '^2.7.5',
+21 silly publish      watchify: '^3.8.0',
+21 silly publish      youemdee: '^1.0.0' },
+21 silly publish   tags: [ 'react', 'dropdown', 'multiple' ],
+21 silly publish   keywords: [],
+21 silly publish   dependencies: { 'dom-scroll-into-view': '1.0.1', 'prop-types': '^15.5.10' },
+21 silly publish   peerDependencies:
+21 silly publish    { react: '^0.14.7 || ^15.0.0-0',
+21 silly publish      'react-dom': '^0.14.7 || ^15.0.0-0' },
+21 silly publish   jest:
+21 silly publish    { modulePathIgnorePatterns: [ '<rootDir>/build/', '<rootDir>/dist/' ],
+21 silly publish      testPathIgnorePatterns: [ '<rootDir>/build/', '<rootDir>/dist/' ] },
+21 silly publish   readme: '# React Autocomplete [![Travis build status](https://travis-ci.org/reactjs/react-autocomplete.svg?branch=master)](https://travis-ci.org/reactjs/react-autocomplete/)\n\nAccessible, extensible, Autocomplete for React.js.\n\n```jsx\n<Autocomplete\n  getItemValue={(item) => item.label}\n  items={[\n    { label: \'apple\' },\n    { label: \'banana\' },\n    { label: \'pear\' }\n  ]}\n  renderItem={(item, isHighlighted) =>\n    <div style={{ background: isHighlighted ? \'lightgray\' : \'white\' }}>\n      {item.label}\n    </div>\n  }\n  value={value}\n  onChange={(e) => value = e.target.value}\n  onSelect={(val) => value = val}\n/>\n```\n\n[Examples](https://reactcommunity.org/react-autocomplete/)\n\n## Install\n\n### npm\n\n```bash\nnpm install --save react-autocomplete\n```\n\n### yarn\n\n```bash\nyarn add react-autocomplete\n```\n\n### AMD/UMD\n\n* Development: [https://unpkg.com/react-autocomplete@1.5.6/dist/react-autocomplete.js](https://unpkg.com/react-autocomplete@1.5.6/dist/react-autocomplete.js)\n* Production: [https://unpkg.com/react-autocomplete@1.5.6/dist/react-autocomplete.min.js](https://unpkg.com/react-autocomplete@1.5.6/dist/react-autocomplete.min.js)\n\n## API\n\n### Props\n\n#### `getItemValue: Function`\nArguments: `item: Any`\n\nUsed to read the display value from each entry in `items`.\n\n#### `items: Array`\nThe items to display in the dropdown menu\n\n#### `renderItem: Function`\nArguments: `item: Any, isHighlighted: Boolean, styles: Object`\n\nInvoked for each entry in `items` that also passes `shouldItemRender` to\ngenerate the render tree for each item in the dropdown menu. `styles` is\nan optional set of styles that can be applied to improve the look/feel\nof the items in the dropdown menu.\n\n#### `autoHighlight: Boolean` (optional)\nDefault value: `true`\n\nWhether or not to automatically highlight the top match in the dropdown\nmenu.\n\n#### `inputProps: Object` (optional)\nDefault value: `{}`\n\nProps that are applied to the `<input />` element rendered by\n`Autocomplete`. Any properties supported by `HTMLInputElement` can be\nspecified, apart from the following which are set by `Autocomplete`:\nvalue, autoComplete, role, aria-autocomplete\n\n#### `menuStyle: Object` (optional)\nDefault value:\n```jsx\n{\n  borderRadius: \'3px\',\n  boxShadow: \'0 2px 12px rgba(0, 0, 0, 0.1)\',\n  background: \'rgba(255, 255, 255, 0.9)\',\n  padding: \'2px 0\',\n  fontSize: \'90%\',\n  position: \'fixed\',\n  overflow: \'auto\',\n  maxHeight: \'50%\', // TODO: don\'t cheat, let it flow to the bottom\n}\n```\n\nStyles that are applied to the dropdown menu in the default `renderMenu`\nimplementation. If you override `renderMenu` and you want to use\n`menuStyles` you must manually apply them (`this.props.menuStyles`).\n\n#### `onChange: Function` (optional)\nDefault value: `function() {}`\n\nArguments: `event: Event, value: String`\n\nInvoked every time the user changes the input\'s value.\n\n#### `onMenuVisibilityChange: Function` (optional)\nDefault value: `function() {}`\n\nArguments: `isOpen: Boolean`\n\nInvoked every time the dropdown menu\'s visibility changes (i.e. every\ntime it is displayed/hidden).\n\n#### `onSelect: Function` (optional)\nDefault value: `function() {}`\n\nArguments: `value: String, item: Any`\n\nInvoked when the user selects an item from the dropdown menu.\n\n#### `open: Boolean` (optional)\nUsed to override the internal logic which displays/hides the dropdown\nmenu. This is useful if you want to force a certain state based on your\nUX/business logic. Use it together with `onMenuVisibilityChange` for\nfine-grained control over the dropdown menu dynamics.\n\n#### `renderMenu: Function` (optional)\nDefault value:\n```jsx\nfunction(items, value, style) {\n  return <div style={{ ...style, ...this.menuStyle }} children={items}/>\n}\n```\n\nArguments: `items: Array<Any>, value: String, styles: Object`\n\nInvoked to generate the render tree for the dropdown menu. Ensure the\nreturned tree includes `items` or else no items will be rendered.\n`styles` will contain { top, left, minWidth } which are the coordinates\nof the top-left corner and the width of the dropdown menu.\n\n#### `shouldItemRender: Function` (optional)\nArguments: `item: Any, value: String`\n\nInvoked for each entry in `items` and its return value is used to\ndetermine whether or not it should be displayed in the dropdown menu.\nBy default all items are always rendered.\n\n#### `sortItems: Function` (optional)\nArguments: `itemA: Any, itemB: Any, value: String`\n\nThe function which is used to sort `items` before display.\n\n#### `value: Any` (optional)\nDefault value: `\'\'`\n\nThe value to display in the input field\n\n#### `wrapperProps: Object` (optional)\nDefault value: `{}`\n\nProps that are applied to the element which wraps the `<input />` and\ndropdown menu elements rendered by `Autocomplete`.\n\n#### `wrapperStyle: Object` (optional)\nDefault value:\n```jsx\n{\n  display: \'inline-block\'\n}\n```\n\nThis is a shorthand for `wrapperProps={{ style: <your styles> }}`.\nNote that `wrapperStyle` is applied before `wrapperProps`, so the latter\nwill win if it contains a `style` entry.\n\n\n### Imperative API\n\nIn addition to the props there is an API available on the mounted element which is similar to that of `HTMLInputElement`. In other words: you can access most of the common `<input>` methods directly on an `Autocomplete` instance. An example:\n\n```jsx\nclass MyComponent extends Component {\n  componentDidMount() {\n    // Focus the input and select "world"\n    this.input.focus()\n    this.input.setSelectionRange(6, 11)\n  }\n  render() {\n    return (\n      <Autocomplete\n        ref={el => this.input = el}\n        value="hello world"\n        ...\n      />\n    )\n  }\n}\n```\n\n# Development\nYou can start a local development environment with `npm start`. This command starts a static file server on [localhost:8080](http://localhost:8080) which serves the examples in `examples/`. Hot-reload mechanisms are in place which means you don\'t have to refresh the page or restart the build for changes to take effect.\n\n## Tests!\n\nRun them:\n`npm test`\n\nWrite them:\n`lib/__tests__/Autocomplete-test.js`\n\nCheck your work:\n`npm run coverage`\n\n## Scripts\nRun with `npm run <script>`.\n\n### gh-pages\nBuilds the examples and assembles a commit which is pushed to `origin/gh-pages`, then cleans up your working directory. Note: This script will `git checkout master` before building.\n\n### release\nTakes the same argument as `npm publish`, i.e. `[major|minor|patch|x.x.x]`, then tags a new version, publishes, and pushes the version commit and tag to `origin/master`. Usage: `npm run release -- [major|minor|patch|x.x.x]`. Remember to update the CHANGELOG before releasing!\n\n### build\nRuns the build scripts detailed below.\n\n### build:component\nTranspiles the source in `lib/` and outputs it to `build/`, as well as creating a UMD bundle in `dist/`.\n\n### build:examples\nCreates bundles for each of the examples, which is used for pushing to `origin/gh-pages`.\n\n### test\nRuns the test scripts detailed below.\n\n### test:lint\nRuns `eslint` on the source.\n\n### test:jest\nRuns the unit tests with `jest`.\n\n### coverage\nRuns the unit tests and creates a code coverage report.\n\n### start\nBuilds all the examples and starts a static file server on [localhost:8080](http://localhost:8080). Any changes made to `lib/Autocomplete.js` and the examples are automatically compiled and transmitted to the browser, i.e. there\'s no need to refresh the page or restart the build during development. This script is the perfect companion when making changes to this repo, since you can use the examples as a test-bed for development.\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'dd12858be4e89f8040b01e30db155d1407e1c9a4',
+21 silly publish   _id: '@benjaminbaldoni/react-dropdown@0.1.0',
+21 silly publish   _shasum: 'c2b99d8cb80b958251b9ddabb71755d0b54f442d',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @benjaminbaldoni/react-dropdown
+24 silly mapToRegistry scope (from package name) @benjaminbaldoni
+25 verbose mapToRegistry no registry URL found in name for scope @benjaminbaldoni
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@benjaminbaldoni/react-dropdown',
+28 silly mapToRegistry   scope: '@benjaminbaldoni',
+28 silly mapToRegistry   escapedName: '@benjaminbaldoni%2freact-dropdown',
+28 silly mapToRegistry   name: '@benjaminbaldoni/react-dropdown',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri https://registry.npmjs.org/@benjaminbaldoni%2freact-dropdown
+30 verbose publish registryBase https://registry.npmjs.org/
+31 silly publish uploading /Users/benjamin/.npm/@benjaminbaldoni/react-dropdown/0.1.0/package.tgz
+32 verbose request uri https://registry.npmjs.org/@benjaminbaldoni%2freact-dropdown
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 7:06:37 PM
+35 verbose request using bearer token for auth
+36 verbose request id 861003adeff0639b
+37 http request PUT https://registry.npmjs.org/@benjaminbaldoni%2freact-dropdown
+38 http 403 https://registry.npmjs.org/@benjaminbaldoni%2freact-dropdown
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=0',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Tue, 13 Jun 2017 22:06:38 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-gru7123-GRU',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1497391598.634553,VS0,VE1046' }
+40 verbose request invalidating /Users/benjamin/.npm/registry.npmjs.org/_40benjaminbaldoni_252freact-dropdown on PUT
+41 error publish Failed PUT 403
+42 verbose stack Error: "You cannot publish over the previously published version 0.1.0." : @benjaminbaldoni/react-dropdown
+42 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+42 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+42 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+42 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+42 verbose stack     at emitTwo (events.js:106:13)
+42 verbose stack     at Request.emit (events.js:191:7)
+42 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+42 verbose stack     at emitOne (events.js:96:13)
+42 verbose stack     at Request.emit (events.js:188:7)
+42 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:969:12)
+43 verbose statusCode 403
+44 verbose pkgid @benjaminbaldoni/react-dropdown
+45 verbose cwd /usr/local/var/www/react-autocomplete
+46 error Darwin 16.4.0
+47 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "--access=public"
+48 error node v6.10.3
+49 error npm  v3.10.10
+50 error code E403
+51 error "You cannot publish over the previously published version 0.1.0." : @benjaminbaldoni/react-dropdown
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]
