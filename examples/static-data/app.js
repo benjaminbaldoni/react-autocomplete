@@ -1,23 +1,23 @@
 import React from 'react'
 import DOM from 'react-dom'
-import { getStates, matchStateToTerm, sortStates, styles } from '../../lib/utils'
+import { getStates, matchStateToTerm, sortStates } from '../../lib/utils'
 import Autocomplete from '../../lib/index'
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    
-    this.state = { 
-      value: '', 
-      singleSelection: {name: 'No Selection'},
-      multiSelection: [{name: 'No Selection'}], 
+
+    this.state = {
+      value: '',
+      singleSelection: { name: 'No Selection' },
+      multiSelection: [{ name: 'No Selection' }],
     }
   }
 
   render() {
     return (
-      <div style={{display:'flex'}}>
-        <div style={{width:'50%'}}>
+      <div style={{ display:'flex' }}>
+        <div style={{ width:'50%' }}>
           <h1>Single Select</h1>
 
           <div>
@@ -29,7 +29,7 @@ class App extends React.Component {
           <Autocomplete
             inputProps={{ id: 'states-autocomplete' }}
             items={getStates()}
-            itemsKey='abbr'
+            itemsKey="abbr"
             getItemValue={(item) => item.abbr}
             shouldItemRender={matchStateToTerm}
             sortItems={sortStates}
@@ -37,11 +37,11 @@ class App extends React.Component {
             buttonComponent={<div>Button</div>}
             renderItem={item => (
               <div key={item.abbr}>{item.name}</div>
-            )}            
+            )}
           />
         </div>
 
-        <div style={{width:'50%'}}>
+        <div style={{ width:'50%' }}>
           <h1>Multi Select</h1>
 
           <div>
@@ -53,7 +53,7 @@ class App extends React.Component {
           <Autocomplete
             inputProps={{ id: 'states-autocomplete' }}
             items={getStates()}
-            itemsKey='abbr'
+            itemsKey="abbr"
             getItemValue={(item) => item.abbr}
             shouldItemRender={matchStateToTerm}
             sortItems={sortStates}
