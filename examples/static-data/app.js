@@ -30,7 +30,6 @@ class App extends React.Component {
             inputProps={{ id: 'states-autocomplete' }}
             items={getStates()}
             itemsKey="abbr"
-            getItemValue={(item) => item.abbr}
             shouldItemRender={matchStateToTerm}
             sortItems={sortStates}
             onSelect={item => this.setState({ singleSelection: item })}
@@ -54,7 +53,6 @@ class App extends React.Component {
             inputProps={{ id: 'states-autocomplete' }}
             items={getStates()}
             itemsKey="abbr"
-            getItemValue={(item) => item.abbr}
             shouldItemRender={matchStateToTerm}
             sortItems={sortStates}
             onSelect={(item, selection) => this.setState({ multiSelection: selection })}
