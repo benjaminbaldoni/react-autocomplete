@@ -60,6 +60,7 @@ class App extends React.Component {
             renderItem={item => (
               <div key={item.abbr}>{item.name}</div>
             )}
+            closeOnSelect={false}
             multiple
           />
         </div>
