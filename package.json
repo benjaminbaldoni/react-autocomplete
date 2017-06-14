@@ -1,6 +1,6 @@
 {
   "name": "@benjaminbaldoni/react-dropdown",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Accessible, extensible, Autocomplete for React.js",
   "main": "./build/lib/Autocomplete.js",
   "files": [

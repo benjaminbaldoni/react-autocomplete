@@ -53,7 +53,7 @@ class App extends React.Component {
             itemsKey="abbr"
             onSelect={(item, selection) => this.setState({ multiSelection: selection })}
             buttonComponent={<div>Button</div>}
-            renderItem={item => (
+            renderItem={(item, isSelected, isHighlighted) => (
               <div key={item.abbr}>{item.name}</div>
             )}
             closeOnSelect={false}
